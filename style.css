@@ -1,6 +1,19 @@
 /* Using kebab case for styles
 Eg: nav-links */
 
+/* Colours:
+Logo: #00AAFF (Blue Jeans)
+Accent: #D92537 (Amaranth Red)
+Primaries: #F2EFEF (Cultured)
+           #010507 (Rich Black FOGRA 39)
+           #1A1A1A (Eerie Black) */
+/* :root{
+  --blue:#00AAFF
+  --red:#D92537
+  --white:#F2EFEF
+  --black:#010507
+  --grey:#1A1A1A
+}           */
 * {
   margin: 0px;
   padding: 0px;
