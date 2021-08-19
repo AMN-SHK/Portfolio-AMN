@@ -482,7 +482,7 @@ footer .container-foot .sec.aboutus p {
   position: relative;
   width: 100%;
   padding: 4px;
-  background: var(--white);
+  background: var(--black);
   display: flex;
   overflow: hidden;
 }
@@ -496,11 +496,12 @@ button {
   padding: 16px 0;
   cursor: pointer;
   z-index: 2;
+  color: var(--white);
   transition: color 240ms ease;
 }
 
 button.active {
-  color: var(--white);
+  color: var(--black);
 }
 
 .indicator {
@@ -517,7 +518,7 @@ button.active {
 .tabcontent {
   position: relative;
   width: 100%;
-  background: #fff;
+  background: var(--white);
   display: flex;
   flex: 2;
   flex-direction: row;
