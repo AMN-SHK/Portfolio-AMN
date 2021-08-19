@@ -23,7 +23,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #001b29;
+  background-color: var(--black);
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
   background-origin: border-box;
@@ -36,8 +36,8 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
-  background-color: var(--black);
+  min-height: 10vh;
+  background-color: transparent;
 }
 .logohref {
   text-decoration: none;
@@ -49,12 +49,11 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
-.logo h4 {
+.logo h3 {
   color: var(--blue);
-  text-transform: uppercase;
-  letter-spacing: 0.39vw;
-  font-size: 1.8vw;
-  margin-left: 6px;
+  letter-spacing: 0.32vw;
+  font-size: 2.3vw;
+  /* margin-left: px; */
   /* float: right; */
   /* margin-top: 25px; */
 }
@@ -194,8 +193,8 @@ header .circle-bhind-img-small3 {
   top: 15%;
 }
 header img {
-  height: 50vw;
-  margin-left: 50.78vw;
+  height: 45vw;
+  margin-left: 46vw;
   z-index: 2;
 }
 .main-text {
@@ -204,20 +203,21 @@ header img {
   padding-bottom: 0.78vw;
   position: absolute;
   top: 10.15vw;
-  left: 5.46vw;
+  left: 4.5vw;
 }
 .main-text h1 {
-  font-size: 6vw;
-  padding-top: 0.78vw;
+  font-size: 4.5vw;
+  padding-top: 0.65vw;
   padding-bottom: 0.62vw;
   color: var(--blue);
 }
 .main-text h3 {
-  font-size: 2.4vw;
+  font-size: 2.2vw;
+  color: var(--red);
 }
 .main-text p {
   white-space: pre;
-  font-size: 1.6vw;
+  font-size: 1.5vw;
 }
 .main-text button{
   background-color: var(--blue);
