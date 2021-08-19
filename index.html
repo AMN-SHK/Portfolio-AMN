@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#00aaff" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Yeseva+One&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Tab Styles -->
+    <!-- <style>
+      
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+        border: 1px solid #00aaff;
+        background-color: #141414;
+      }
+      
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: inherit;
+        color: #00aaff;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+      
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #32b8fc;
+        color: rgb(235, 235, 235);
+      }
+      
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #00aaff;
+        color: rgb(221, 221, 221);
+      }
+      
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        -webkit-animation: fadeEffect 1s;
+        animation: fadeEffect 1s;
+      }
+      
+      /* Fade in tabs */
+      @-webkit-keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+      
+      @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+      </style> -->
+    <title>Portfolio | AMN Designs</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logohref">
+        <div class="logo">
+          <img src="images/logo.png" title="Home" />
+          <h4>AMN Designs</h4>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#pf">Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <header>
+      <span class="circle-bhind-img"></span>
+      <span class="circle-bhind-img-small1"></span>
+      <span class="circle-bhind-img-small2"></span>
+      <span class="circle-bhind-img-small3"></span>
+      <img src="images/headerimg.png" title="I am not so Photogenic" />
+      <div class="main-text">
+        <h3>AMN Designs'</h3>
+        <h1>Portfolio</h1>
+        <p>Hi There,</p>
+        <p>I would be working on your projects if you hire me.</p>
+        <p>But First have a look at my previous projects.</p>
+      </div>
+    </header>
+    <a id="pf">
+      <style>
+        .tabcontainer {
+  position: relative;
+  width: 100%;
+  padding: 4px;
+  background: #fff;
+  display: flex;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+button {
+  font-size: 18px;
+  background: none;
+  border: none;
+  flex: 1;
+  text-align: center;
+  padding: 16px 0;
+  cursor: pointer;
+  z-index: 2;
+  transition: color 240ms ease;
+}
+
+button.active {
+  color: #fff;
+}
+
+.indicator {
+  position: absolute;
+  height: calc(100% - 8px);
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: calc(100% / 3);
+  background: #0cccf0;
+  border-radius: 32px;
+  margin-left: calc((100% / 3 - 4px) * var(--active-index));
+  transition: margin-left 360ms cubic-bezier(.53,.32,.22,1.07);
+}
+      </style>
+      <div class="tabcontainer">
+        <button class="button active" id="1">test1</button>
+        <button class="button" id="2">test2</button>
+        <button class="button" id="3">test3</button>
+        <div class="indicator"></div>
+      </div>
+    <!--<div class="container">
+      <div class="box a">
+        <div class="imgbox"><img src="images/img1.jpg" title="Entry for Benny's Giveaway" >
+        </div>
+      <div class="imgcontent">
+        <div>
+          <h2>Image Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolor laudantium laboriosam, quisquam consequatur illo ducimus
+            vero molestias ex natus, cumque quas. Voluptate ullam deserunt 
+            recusandae rem in, quibusdam hic eius.
+          </p>
+        </div>
+      </div>
+    </div>
+      <div class="box b">
+        <div class="imgbox"><img src="images/img2.jpg" title="Banner for Local Arcade" ></div>
+        <div class="imgcontent">
+          <div>
+            <h2>Image Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolor laudantium laboriosam, quisquam consequatur illo ducimus
+              vero molestias ex natus, cumque quas. Voluptate ullam deserunt 
+              recusandae rem in, quibusdam hic eius.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box c">
+        <div class="imgbox"><img src="images/img3.jpg" title="My logo" ></div>
+        <div class="imgcontent">
+          <div>
+            <h2>Image Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolor laudantium laboriosam, quisquam consequatur illo ducimus
+              vero molestias ex natus, cumque quas. Voluptate ullam deserunt 
+              recusandae rem in, quibusdam hic eius.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box d">
+        <div class="imgbox"><img src="images/img4.jpg" title="Mobile Wallpaper" ></div>
+        <div class="imgcontent">
+          <div>
+            <h2>Image Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolor laudantium laboriosam, quisquam consequatur illo ducimus
+              vero molestias ex natus, cumque quas. Voluptate ullam deserunt 
+              recusandae rem in, quibusdam hic eius.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box e">
+        <div class="imgbox"><img src="images/img5.jpg" title="Christmas Instagram Post" ></div>
+            <div class="imgcontent">
+        <div>
+          <h2>Image Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolor laudantium laboriosam, quisquam consequatur illo ducimus
+            vero molestias ex natus, cumque quas. Voluptate ullam deserunt 
+            recusandae rem in, quibusdam hic eius.
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="box f">
+        <div class="imgbox"><img src="images/img6.jpg" title="Label for Ham" ></div>
+            <div class="imgcontent">
+        <div>
+          <h2>Image Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolor laudantium laboriosam, quisquam consequatur illo ducimus
+            vero molestias ex natus, cumque quas. Voluptate ullam deserunt 
+            recusandae rem in, quibusdam hic eius.
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="box g">
+        <div class="imgbox"><img src="images/img7.jpeg" title="Youtube Profile Picture" ></div>
+            <div class="imgcontent">
+        <div>
+          <h2>Image Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolor laudantium laboriosam, quisquam consequatur illo ducimus
+            vero molestias ex natus, cumque quas. Voluptate ullam deserunt 
+            recusandae rem in, quibusdam hic eius.
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="box h">
+        <div class="imgbox"><img src="images/img8.png" title="Transparent Logo" ></div>
+            <div class="imgcontent">
+        <div>
+          <h2>Image Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolor laudantium laboriosam, quisquam consequatur illo ducimus
+            vero molestias ex natus, cumque quas. Voluptate ullam deserunt 
+            recusandae rem in, quibusdam hic eius.
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="box i">
+        <div class="imgbox"><img src="images/img9.jpg" title="Youtube Banner" ></div>
+            <div class="imgcontent">
+        <div>
+          <h2>Image Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolor laudantium laboriosam, quisquam consequatur illo ducimus
+            vero molestias ex natus, cumque quas. Voluptate ullam deserunt 
+            recusandae rem in, quibusdam hic eius.
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="box j">
+        <div class="imgbox"><img src="images/img10.jpg" title="Youtube Banner" ></div>
+            <div class="imgcontent">
+        <div>
+          <h2>Image Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolor laudantium laboriosam, quisquam consequatur illo ducimus
+            vero molestias ex natus, cumque quas. Voluptate ullam deserunt 
+            recusandae rem in, quibusdam hic eius.
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="box k">
+        <div class="imgbox"><img src="images/img11.jpg" title="My Previous Logo" ></div>
+            <div class="imgcontent">
+        <div>
+          <h2>Image Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolor laudantium laboriosam, quisquam consequatur illo ducimus
+            vero molestias ex natus, cumque quas. Voluptate ullam deserunt 
+            recusandae rem in, quibusdam hic eius.
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="box l">
+        <div class="imgbox"><img src="images/img12.jpg" title="Youtube Thumbnail" ></div>
+            <div class="imgcontent">
+        <div>
+          <h2>Image Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolor laudantium laboriosam, quisquam consequatur illo ducimus
+            vero molestias ex natus, cumque quas. Voluptate ullam deserunt 
+            recusandae rem in, quibusdam hic eius.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div></div> -->
+  </a>
+  <a id="about"></a>
+  <footer>
+    <div class="container-foot">
+      <div class="sec aboutus">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quo, nobis minima, vitae quaerat in veniam sunt nostrum commodi at, veritatis voluptatem! Iste assumenda aspernatur unde dicta enim vero quas?</p>
+        <ul class="social">
+          <li><a href="https://www.instagram.com/amn_designss/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+      <div class="contactme">
+        <h2>Contact Me</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fas fa-phone-alt"></i></i></span>
+            <span><a href="tel:+917757912578">+917757912578</a></span>
+          </li>
+          <li>
+            <span><i class="fas fa-envelope"></i></span>
+            <span><a href="mailto:hmsamaan@gmail.com">hmsamaan@gmail.com</a></span>
+          </li>
+        </ul>
+        <p>(Business Only)</p>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>Copyright © 2020 AMN Designs. All Rights Reserved.</p>
+  </div>
+  <!-- <div class="popupcontainer">
+    <div class="imgpopup">
+      <img src="img1.jpg" alt="">
+    </div>
+  </div> -->
+    <script src="app.js"></script>
+  </body>
+</html>
