@@ -44,52 +44,25 @@
       </div>
     </header>
     <a id="pf">
-      <style>
-        .tabcontainer {
-  position: relative;
-  width: 100%;
-  padding: 4px;
-  background: #fff;
-  display: flex;
-  border-radius: 32px;
-  overflow: hidden;
-}
+    <div class="tabcontainer">
+      <button class="tabbutton active">test1</button>
+      <button class="tabbutton">test2</button>
+      <button class="tabbutton">test3</button>
+      <div class="indicator"></div>
+    </div>
+    <div id="London" class="tabcontent active">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
 
-button {
-  font-size: 18px;
-  background: none;
-  border: none;
-  flex: 1;
-  text-align: center;
-  padding: 16px 0;
-  cursor: pointer;
-  z-index: 2;
-  transition: color 240ms ease;
-}
-
-button.active {
-  color: #fff;
-}
-
-.indicator {
-  position: absolute;
-  height: calc(100% - 8px);
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  width: calc(100% / 3);
-  background: #0cccf0;
-  border-radius: 32px;
-  margin-left: calc((100% / 3 - 4px) * var(--active-index));
-  transition: margin-left 360ms cubic-bezier(.53,.32,.22,1.07);
-}
-      </style>
-      <div class="tabcontainer">
-        <button class="button active" id="1">test1</button>
-        <button class="button" id="2">test2</button>
-        <button class="button" id="3">test3</button>
-        <div class="indicator"></div>
-      </div>
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
+    <div id="Tokyo" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
     <!--<div class="container">
       <div class="box a">
         <div class="imgbox"><img src="images/img1.jpg" title="Entry for Benny's Giveaway" >

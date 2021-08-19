@@ -28,19 +28,28 @@ const navSlide = () => {
 navSlide();
 
 // Tab Animation
-const elements = Array.from(document.querySelectorAll("button"));
-
+const elements = Array.from(document.getElementsByClassName("tabbutton"));
+const tabContent = Array.from(document.getElementsByClassName("tabcontent"));
 let activeIndex = 0;
 
 const updateIndex = (newIndex) => {
-  elements[activeIndex].classList.remove("active");
+  elements[activeIndex].classList.remove("active"); //removes active class
   document.body.style.setProperty("--active-index", newIndex);
   elements[newIndex].classList.add("active");
   activeIndex = newIndex;
 };
-
-const registerEvent = (button, index) => {
-  button.addEventListener("click", () => updateIndex(index));
+const registerEvent = (tabbutton, index) => {
+  tabbutton.addEventListener("click", () => updateIndex(index));
 };
-
 elements.forEach(registerEvent);
+let activeIndexofContent = 0;
+const updateIndexofContent = (newIndexofContent) => {
+  tabContent[activeIndexofContent].classList.remove("active"); //removes active class
+  document.body.style.setProperty("--active-index", newIndexofContent);
+  tabContent[newIndexofContent].classList.add("active");
+  activeIndexofContent = newIndexofContent;
+};
+const registerEventofContent = (tabbutton, index) => {
+  tabbutton.addEventListener("click", () => updateIndexofContent(index));
+};
+elements.forEach(registerEventofContent);

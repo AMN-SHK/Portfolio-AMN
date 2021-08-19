@@ -456,3 +456,55 @@ footer .container-foot .sec.aboutus p {
     padding: 8px 40px;
   }
 }
+/* Tab Styles */
+
+.tabcontainer {
+  position: relative;
+  width: 100%;
+  padding: 4px;
+  background: #fff;
+  display: flex;
+  overflow: hidden;
+}
+
+button {
+  font-size: 18px;
+  background: none;
+  border: none;
+  flex: 1;
+  text-align: center;
+  padding: 16px 0;
+  cursor: pointer;
+  z-index: 2;
+  transition: color 240ms ease;
+}
+
+button.active {
+  color: #fff;
+}
+
+.indicator {
+  position: absolute;
+  height: calc(100% - 8px);
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: calc(100% / 3);
+  background: #0cccf0;
+  margin-left: calc((100% / 3 - 4px) * var(--active-index));
+  transition: margin-left 360ms cubic-bezier(0.53, 0.32, 0.22, 1.07);
+}
+.tabcontent {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  overflow: hidden;
+  display: none;
+  padding: 6px 4px;
+}
+.tabcontent.active {
+  display: block;
+}
